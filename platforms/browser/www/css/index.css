@@ -1,0 +1,36 @@
+/* body{
+    background: url("../img/images.jpeg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%; 
+     height: 100%;
+
+    
+} */
+html{
+    background: url(../img/images.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.wrapper{
+    text-align:center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+
+/* Do not select background image
+img:not(#cover){
+    width: 50%;
+    height:auto;
+    border-radius: 50%;
+    margin-bottom: 2%;
+} */
+
