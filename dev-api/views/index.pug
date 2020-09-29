@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  div(class="container")
+    form(method='post', enctype='multipart/form-data')
+      input(type='file', name='imageupload')
+      input(type='submit', name='uploadimage', value='Upload Image')

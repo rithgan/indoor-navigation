@@ -1,0 +1,52 @@
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+  background-color: lavenderblush;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  font-family: inherit;
+  font-size: larger;
+  text-decoration: none;
+  color: black;
+  padding: 16px;
+  border: 2px solid black;
+  background-color: blanchedalmond;
+  cursor: pointer;
+}
+
+form {
+  padding: 32px;
+  background-color: blanchedalmond;
+  border: 1px solid black;
+}
+
+input[type="file"] {
+  font-family: inherit;
+  font-size: larger;
+  margin: 8px;
+  padding: 16px;
+  background-color: cornsilk;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  font-family: inherit;
+  margin: 8px;
+  padding: 12px;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
