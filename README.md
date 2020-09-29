@@ -9,4 +9,4 @@ Developera api video link - https://drive.google.com/file/d/1V6DC62Nz8q1xROhTp-V
 
 Sample 3-D model working link - https://drive.google.com/file/d/1aoMXArUcszcOf_DYBFG3Vc-2y5RCi45o/view?usp=sharing
 
-Image of output - 
+Image of output to be passed to unity to create model - https://drive.google.com/file/d/1Dd0MP82_PRfEyWhZoUMp_uXxo8kUWJQM/view?usp=sharing 
