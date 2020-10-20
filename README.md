@@ -1,9 +1,7 @@
-
-# Team imperium
-1. rithgan
-2. Abhi-nave
-3. paras-jindal
-4. kartik495
+Rithik Gandhi  
+Paras Jindal   
+Abhinave Gupta 
+Kartik Mishra     
 
 The main goal of this system is to facilitate indoor navigation for able-bodied and impaired persons. In the intended application, handheld devices will be given the capability to guide a person along the most desirable path to their selected destination. The system will be easy to implement in buildings that have existing wireless connectivity
 
