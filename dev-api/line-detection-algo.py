@@ -12,6 +12,22 @@ from pytesseract import *
 class extraction:
     save_image=0
     data={'floor':{'number':0,'walls':[],'text_data':[]},'ratio':[]}
+    @staticmethod
+    def get_image(img_location):
+        image = cv2.imread(img_location,0)
+        image = np.array(image)
+        # print(image.shape)
+        scale_x=image.shape[0]/500
+        scale_y = image.shape[1]/500
+        extraction.data['ratio']=[scale_x,scale_y]
+        image =cv2.resize(image,(500,500))
+        # print(image.shape)
+        background_value=image[0][0]
+        for i in range(500):
+            for j in range(500):
+                image[i][j]=255-image[i][j]
+        extraction.save_image=image
+
 
     @staticmethod
     def detecttext():
@@ -46,22 +62,6 @@ class extraction:
         # cv2.imshow("Image", images)
         # cv2.waitKey(0)
         # cv2.destroyAllWindows()
-    @staticmethod
-    def get_image(img_location):
-        image = cv2.imread(img_location,0)
-        image = np.array(image)
-        # print(image.shape)
-        scale_x=image.shape[0]/500
-        scale_y = image.shape[1]/500
-        extraction.data['ratio']=[scale_x,scale_y]
-        image =cv2.resize(image,(500,500))
-        # print(image.shape)
-        background_value=image[0][0]
-        for i in range(500):
-            for j in range(500):
-                image[i][j]=255-image[i][j]
-        extraction.save_image=image
-
 
     
     @staticmethod
