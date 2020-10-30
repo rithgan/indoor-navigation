@@ -8,11 +8,9 @@ import cv2
 import numpy as np
 import json
 from pytesseract import *
-
 class extraction:
     save_image=0
     data={'floor':{'number':0,'walls':[],'text_data':[]},'ratio':[]}
-
     @staticmethod
     def get_image(img_location):
         image = cv2.imread(img_location,0)
@@ -28,9 +26,6 @@ class extraction:
             for j in range(500):
                 image[i][j]=255-image[i][j]
         extraction.save_image=image
-
-
-
 
 
     @staticmethod
@@ -67,6 +62,7 @@ class extraction:
         # cv2.waitKey(0)
         # cv2.destroyAllWindows()
 
+    
     @staticmethod
     def detectline(json_location='',max_gap=2,threshold=50):
 
@@ -298,6 +294,8 @@ class extraction:
             return True,index[0]
         else:
             return False,-1
+
+
 
 if __name__=='__main__':
     imgJpeg = r"public/uploads/blueprint.jpeg"
